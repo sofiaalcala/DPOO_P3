@@ -8,6 +8,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+//import Main.Principal;
+
 
 
 public class MenuEstudiante extends JFrame implements ActionListener{
@@ -16,14 +18,14 @@ public class MenuEstudiante extends JFrame implements ActionListener{
 	public JButton BCompletarLP;
 	public JButton BRealizarActividad;
 	public JButton BConsultarProgreso;
-	
+	private static String ACTIVIDAD = "actividad";
 	public MenuEstudiante() {
 		
 		setTitle("Menu Estudiante");
 		setLayout(null);
 		setBounds(100, 100, 450, 400);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		
+		this.setVisible(true);
 		
 		
 		BInscribirLP = new JButton("Inscribir Learning Path");
@@ -38,6 +40,7 @@ public class MenuEstudiante extends JFrame implements ActionListener{
 		BRealizarActividad = new JButton("Realizar actividad");
 		BRealizarActividad.setBounds(120, 170, 200, 50);
 		BRealizarActividad.setBackground(azulColumbia);
+		BRealizarActividad.setActionCommand(ACTIVIDAD);
 		
 		BConsultarProgreso = new JButton("Consultar progreso anual");
 		BConsultarProgreso.setBounds(120, 230, 200, 50);
@@ -59,6 +62,11 @@ public class MenuEstudiante extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		String comando = e.getActionCommand();
+		if(comando.equals(ACTIVIDAD)) {
+			new realizarTarea().setVisible(true);;
+			
+		}
 		if (e.getSource() == BCompletarLP) {
 			CompletarLP completar = new CompletarLP();
 			completar.setLocationRelativeTo(null);
