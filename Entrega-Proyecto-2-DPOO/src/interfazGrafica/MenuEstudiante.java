@@ -75,6 +75,11 @@ public class MenuEstudiante extends JFrame implements ActionListener{
 			InscribirLP inscribir = new InscribirLP();
 			inscribir.setLocationRelativeTo(null);
 			inscribir.setVisible(true);
+		} else if (e.getSource() == BConsultarProgreso) {
+			Grafica progreso = new Grafica();
+			progreso.setLocationRelativeTo(null);
+			progreso.setVisible(true);
+			
 		}
 		
 	}
