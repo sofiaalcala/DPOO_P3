@@ -126,5 +126,11 @@ public class Quiz extends Actividad{
 		else {
 			return false;
 		}}
-}
+	
+	@Override
+	public String toString() {
+		return "Tipo Actividad: " + tipoActividad + ", id Actividad:" + idActividad;
+	}}
+
+
 

@@ -123,7 +123,7 @@ public class CrearNuevaActividad extends JFrame{
 		txtDuracion.setColumns(10);
 		
 		chkCompletada = new JCheckBox("Completada");
-		chkCompletada.setBounds(57, 417, 128, 23);
+		chkCompletada.setBounds(57, 379, 128, 23);
 		PActividadNueva.add(chkCompletada);
 		
 		JButton BCrear = new JButton("Crear");

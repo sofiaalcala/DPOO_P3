@@ -46,10 +46,14 @@ public class InscribirLP extends JFrame implements ActionListener{
 	public InscribirLP() {
 
 		
-		LearningPath lp = new LearningPath(null, null, null, null, null, null, false);
-		LearningPath lp2 = new LearningPath(null, null, null, null, null, null, false);
+		LearningPath lp = new LearningPath("Introducción a la Programación", "04-11-2024", "04-12-2024", "2", "50000", "10", false);
+		LearningPath lp2 = new LearningPath("Estructura de Datos", "10-05-2024", "12-07-2024", "5", "10000", "11", false);
+		LearningPath lp3 = new LearningPath("Estrategia de Negocios", "06-09-2024", "01-12-2024", "3", "70000", "12", false);
+		LearningPath lp4 = new LearningPath("Project Management", "06-09-2024", "12-01-2025", "3", "90000", "13", false);
 		lp.learningPathListaCompleta.add(lp);
 		lp.learningPathListaCompleta.add(lp2);
+		lp.learningPathListaCompleta.add(lp3);
+		lp.learningPathListaCompleta.add(lp4);
 		
 		ArrayList<LearningPath> learningPaths = lp.getLearningPathListaCompleta();
 	

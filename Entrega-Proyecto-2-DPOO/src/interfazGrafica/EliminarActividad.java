@@ -42,8 +42,8 @@ public class EliminarActividad extends JFrame implements ActionListener{
 	public EliminarActividad() {
 		
 		
-		Tarea tarea = new Tarea(null, null, null, false, null, null, null);
-		Examen examen = new Examen(null, null, null, false, null, null, null);
+		Tarea tarea = new Tarea("06-12-2024", "3", "30 minutos", false, "20", "Tarea", "10");
+		Examen examen = new Examen("10-12-2024", "4", "120 minutos", false, "21", "Examen", "10");
 		
 		LearningPath lp = new LearningPath(null, null, null, null, null, null, false);
 		lp.addActividad(tarea);
@@ -61,13 +61,13 @@ public class EliminarActividad extends JFrame implements ActionListener{
 		Color aliciaAzul = new Color(216, 225, 233);
 		PEliminar.setBackground(aliciaAzul);
 		
-		LidLP = new JLabel("Ingrese el id del Learning Path donde se encuentra la actividad:");
+		LidLP = new JLabel("Seleccione la actividad que desea eliminar:");
 		LidLP.setFont(new Font("Tahoma", Font.BOLD, 14));
 		LidLP.setBounds(41, 63, 442, 37);
 		PEliminar.add(LidLP);
 		
 		actividades = new JComboBox<>(listaActividades.toArray(new Actividad[0]));
-		actividades.setBounds(134, 100, 200, 90);
+		actividades.setBounds(134, 100, 265, 90);
 		actividades.addActionListener(this);
 		PEliminar.add(actividades);
 

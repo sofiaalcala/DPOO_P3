@@ -128,6 +128,11 @@ public class Tarea extends Actividad{
 			return false;
 		}}
 	
+	@Override
+	public String toString() {
+		return "Tipo Actividad: " + tipoActividad + ", id Actividad:" + idActividad;
+	}}
 
-}
+	
+
 

@@ -250,9 +250,15 @@ public abstract class Actividad implements Serializable{
 		}
 		}
 		return contadores;
-		}}
+		}
+	
+	@Override
+	public String toString() {
+		return "Tipo Actividad: " + tipoActividad + ", id Actividad:" + idActividad;
+	}
+	
 
-
+}
 
 
 

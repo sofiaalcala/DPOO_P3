@@ -250,6 +250,11 @@ public class LearningPath implements Serializable{
 		System.out.println(lp.getLearningPathListaCompleta());
 	}
 	
+	@Override
+	public String toString() {
+		return titulo;
+	}
+	
 }
 
 
